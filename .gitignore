@@ -1,23 +1,100 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
+# Dependencies
 /node_modules
 /.pnp
 .pnp.js
+yarn.lock
+package-lock.json
 
-# testing
+# Testing
 /coverage
 
-# production
-/build
+# Next.js
+/.next/
+/out/
+.next
+next-env.d.ts
 
-# misc
-.DS_Store
+# Production
+/build
+/dist
+
+# Environment files
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
+# Debug logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+debug.log
+
+# IDE and Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+*.pem
+.history
+
+# Vercel
+.vercel
+
+# PWA files
+public/sw.js
+public/workbox-*.js
+public/worker-*.js
+public/sw.js.map
+public/workbox-*.js.map
+public/worker-*.js.map
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Misc
+*.log
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.cache
+.temp
+.tmp
+
+# Local Netlify folder
+.netlify
+
+# Serverless directories
+.serverless/
+
+# Dynamic images/files
+public/uploads/
+*.mp4
+*.mov
+*.avi
+*.webm
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# TypeScript
+*.tsbuildinfo
+
+# Tailwind CSS
+.turbo
+.cache
+styles/tailwind.css
