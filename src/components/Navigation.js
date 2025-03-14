@@ -24,6 +24,22 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [lastScrollY]);
 
+  const handleNavClick = (e, href) => {
+    e.preventDefault();
+    const element = document.querySelector(href);
+    if (element) {
+      const offset = 80; // Adjust this value based on your header height
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+    setIsMobileMenuOpen(false);
+  };
+
   const navItems = [
     { href: '#home', label: 'Home' },
     { href: '#about', label: 'About' },
@@ -43,16 +59,18 @@ const Navigation = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
               {/* Logo */}
-              <motion.div
+              <motion.a
+                href="#home"
+                onClick={(e) => handleNavClick(e, '#home')}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
-                className="flex-shrink-0"
+                className="flex-shrink-0 cursor-pointer"
               >
                 <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-white/70">
                   Elias
                 </span>
-              </motion.div>
+              </motion.a>
 
               {/* Desktop Navigation */}
               <div className="hidden md:flex items-center space-x-8">
@@ -60,10 +78,11 @@ const Navigation = () => {
                   <motion.a
                     key={item.href}
                     href={item.href}
+                    onClick={(e) => handleNavClick(e, item.href)}
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: index * 0.1, duration: 0.3 }}
-                    className="text-white/70 hover:text-white transition-colors duration-300 text-sm uppercase tracking-wider"
+                    className="text-white/70 hover:text-white transition-colors duration-300 text-sm uppercase tracking-wider cursor-pointer"
                   >
                     {item.label}
                   </motion.a>
@@ -169,8 +188,8 @@ const Navigation = () => {
                       initial={{ opacity: 0, x: -20 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: index * 0.1 }}
-                      onClick={() => setIsMobileMenuOpen(false)}
-                      className="block px-4 py-2.5 text-base font-medium text-white/70 hover:text-white hover:bg-white/5 rounded-xl transition-colors duration-300"
+                      onClick={(e) => handleNavClick(e, item.href)}
+                      className="block px-4 py-2.5 text-base font-medium text-white/70 hover:text-white hover:bg-white/5 rounded-xl transition-colors duration-300 cursor-pointer"
                     >
                       {item.label}
                     </motion.a>
