@@ -7,7 +7,7 @@ const Navigation = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isResumeOpen, setIsResumeOpen] = useState(false);
 
-  const CV_URL = "https://fuchsia-ardeen-96.tiiny.site/";
+  const CV_URL = "https://moccasin-drusilla-71.tiiny.site/";
 
   useEffect(() => {
     const handleScroll = () => {

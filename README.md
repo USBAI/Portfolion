@@ -1,91 +1,117 @@
-# Elias Luzwehimana - Portfolio
+# Elias Luzwehimana - Software Engineer
 
 <div align="center">
   <img src="public/preview.png" alt="Portfolio Preview" width="100%" />
   
   ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
   ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
-  ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-  ![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
+  ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+  ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+  ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+  ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 </div>
 
-## 🌟 Overview
+## 🌟 About Me
 
-A modern, responsive portfolio website showcasing my work as a Full Stack Developer. Built with React, Next.js, and TailwindCSS, featuring smooth animations and a sleek design.
+> "In the world of code, every line tells a story, every function solves a problem, and every project makes a difference. Through software engineering, we don't just write code – we build the future, one commit at a time."
 
-### ✨ Live Demo
+I'm Elias Luzwehimana, a passionate software engineer with expertise in full-stack development and cloud technologies. My journey in technology began with a simple curiosity about how digital systems work, which quickly evolved into a burning passion for software development.
 
-Visit the live portfolio: [Portfolio Website](https://eliasluzwehimana.com)
+### What Drives Me
+- 🎯 Building solutions that make a real impact
+- 📚 Exploring new technologies and best practices
+- 💡 Creating intuitive and accessible user experiences
 
-## 🚀 Features
+### My Approach
+- 🔄 User-centered design thinking
+- 📐 Clean, maintainable code architecture
+- 📈 Continuous learning and improvement
 
-- **Modern Design**: Clean and professional interface with a dark theme
-- **Responsive Layout**: Seamless experience across all devices
-- **Interactive Elements**: Smooth animations and transitions using Framer Motion
-- **Dynamic Projects**: Showcase of recent work with live demos
-- **Performance Optimized**: Fast loading times and optimal performance
-- **Contact Integration**: Easy ways to get in touch
-- **CV/Resume Access**: Direct access to professional resume
+## 💼 Professional Experience
 
-## 🛠️ Tech Stack
+### Coredination AB (October 2021 - March 2025)
+**Fullstack Developer**
 
-- **Frontend Framework**: React.js
-- **Meta Framework**: Next.js
-- **Styling**: TailwindCSS
-- **Animations**: Framer Motion
-- **Deployment**: Vercel
-- **Version Control**: Git & GitHub
+Working at Coredination AB has been an incredible journey of growth and innovation. I've had the opportunity to work on cutting-edge projects, implementing serverless architectures with AWS and modern frontend solutions.
 
-## 📋 Project Structure
+**Technologies & Tools:**
+- Frontend: React.js, Next.js, TypeScript, Tailwind CSS
+- Backend: Node.js, Express.js, GraphQL
+- Cloud: AWS (DynamoDB, Lambda, S3)
 
+### Scania (February 2020 - March 2022)
+**Backend Developer**
+
+At Scania, I specialized in backend development for enterprise-level applications that impacted the automotive industry. Focused on AWS cloud services and PostgreSQL databases optimization.
+
+**Technologies & Tools:**
+- Backend: Python, Django, REST APIs
+- Database: PostgreSQL
+- DevOps: Docker, Jenkins, Git
+- Cloud: AWS (RDS, EC2, CloudFormation)
+
+## 🎓 Education
+
+### YHögskolan | Chas
+**Full Stack Software Engineering** (2022 - Present)
+
+Comprehensive software engineering program focusing on modern web development, cloud technologies, and AI integration.
+
+## 🛠️ Technical Skills
+
+### Frontend Development
 ```
-portfolio/
-├── src/
-│   ├── components/
-│   │   ├── Hero.js
-│   │   ├── Navigation.js
-│   │   ├── Projects.js
-│   │   ├── AboutStory.js
-│   │   ├── Education.js
-│   │   ├── WorkExperience.js
-│   │   └── Contact.js
-│   ├── assets/
-│   │   └── [static files]
-│   └── styles/
-│       └── globals.css
-├── public/
-│   └── [public assets]
-├── package.json
-└── README.md
+React.js • Next.js • TypeScript • Tailwind CSS • HTML5/CSS3 • Responsive Design • Figma
 ```
 
-## 🌈 Key Components
+### Backend Development
+```
+Python (Django, FastAPI) • Node.js • GraphQL • RESTful APIs • Java • C# (.NET Core)
+```
 
-### 🎯 Hero Section
-- Dynamic particle animation
-- Professional introduction
-- Call-to-action buttons
+### Database & Cloud
+```
+PostgreSQL • MongoDB • AWS (Lambda, EC2, RDS) • Firebase • Docker • Kubernetes
+```
 
-### 📚 Projects Section
-- Featured project cards
-- Live project demos
-- Technology stack display
-- Interactive hover effects
+### Additional Skills
+```
+CI/CD • Git • System Architecture • AI Integration • Prompt Engineering • Database Optimization
+```
 
-### 💼 Work Experience
-- Timeline of professional experience
-- Company details and roles
-- Key achievements and technologies
+## 🚀 Featured Projects
 
-### 🎓 Education & Skills
-- Academic background
-- Technical skills showcase
-- Professional certifications
+### Kluret AI
+![Live](https://img.shields.io/badge/Status-Live-success)
 
-### 📞 Contact Section
-- Contact form integration
-- Social media links
-- Professional email contact
+An advanced AI-driven search engine revolutionizing product discovery across European e-commerce platforms.
+
+**Technologies:**
+- Frontend: React.js, Next.js
+- Backend: Python, Django
+- Database: MongoDB, PostgreSQL
+- AI/ML: TensorFlow, OpenAI APIs
+- Infrastructure: AWS, Docker, Elasticsearch
+
+### Vornify AI
+![Live](https://img.shields.io/badge/Status-Live-success)
+
+An AI-driven platform that transforms web application development, turning ideas into fully functional products within hours.
+
+**Technologies:**
+- Frontend: React.js, Next.js
+- Backend: Node.js, Python (FastAPI)
+- Database: MongoDB, PostgreSQL
+- Infrastructure: AWS, Docker, Kubernetes
+- API: GraphQL
+
+## 📬 Contact
+
+- 📧 Email: [eliasnhunzwe@gmail.com](mailto:eliasnhunzwe@gmail.com)
+- 📱 Phone: +46 72 775 91 88
+- 📍 Location: Stockholm, Sweden
+- 💼 LinkedIn: [Elias Luzwehimana](https://www.linkedin.com/in/elias-nhunzwenimana-191a66233/)
+- 🐱 GitHub: [@USBAI](https://github.com/USBAI)
 
 ## 🚀 Getting Started
 
@@ -110,87 +136,15 @@ portfolio/
    npm run build
    ```
 
-## 🎨 Customization
-
-### Styling
-- Modify `tailwind.config.js` for theme customization
-- Update global styles in `src/styles/globals.css`
-- Component-specific styles within component files
-
-### Content
-- Update project data in `Projects.js`
-- Modify personal information in respective components
-- Add new sections by creating new components
-
-## 🔧 Configuration
-
-### Environment Variables
-Create a `.env.local` file:
-```env
-NEXT_PUBLIC_SITE_URL=your-site-url
-NEXT_PUBLIC_CONTACT_EMAIL=your-email
-```
-
-## 📱 Responsive Design
-
-- Mobile-first approach
-- Breakpoints:
-  - Mobile: < 640px
-  - Tablet: 640px - 1024px
-  - Desktop: > 1024px
-
-## ⚡ Performance Optimization
-
-- Image optimization with Next.js
-- Code splitting and lazy loading
-- Minimized bundle size
-- Optimized animations
-
-## 🔐 Security
-
-- Protected contact form
-- Secure external links
-- Environment variable protection
-- XSS prevention
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch
-   ```bash
-   git checkout -b feature/AmazingFeature
-   ```
-3. Commit your changes
-   ```bash
-   git commit -m 'Add some AmazingFeature'
-   ```
-4. Push to the branch
-   ```bash
-   git push origin feature/AmazingFeature
-   ```
-5. Open a Pull Request
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📬 Contact
-
-Elias Luzwehimana - [eliasnhunzwe@gmail.com](mailto:eliasnhunzwe@gmail.com)
-
-LinkedIn: [Elias Luzwehimana](https://www.linkedin.com/in/elias-nhunzwenimana-191a66233/)
-GitHub: [@USBAI](https://github.com/USBAI)
-
-## 🙏 Acknowledgments
-
-- [React.js](https://reactjs.org/)
-- [Next.js](https://nextjs.org/)
-- [TailwindCSS](https://tailwindcss.com/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [Vercel](https://vercel.com/)
-
 ---
 
 <div align="center">
-  Made with ❤️ by Elias Luzwehimana
+  <i>Let's connect and create something amazing together!</i>
+  
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/elias-nhunzwenimana-191a66233/)
+  [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/USBAI)
 </div>
