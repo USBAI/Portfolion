@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const AboutStory = () => {
   return (
-    <section className="relative py-20 bg-gradient-to-b from-black via-gray-900 to-black overflow-hidden">
+    <section id="about" className="relative py-20 bg-gradient-to-b from-black via-gray-900 to-black overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute inset-0 bg-[linear-gradient(45deg,_var(--tw-gradient-stops))] from-blue-500/10 via-purple-500/10 to-pink-500/10"></div>
@@ -20,7 +20,7 @@ const AboutStory = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 text-transparent bg-clip-text">
-            My Journey in Tech
+            Min Resa Inom Tech
           </h2>
         </motion.div>
 
@@ -33,13 +33,13 @@ const AboutStory = () => {
             className="space-y-6 text-gray-300"
           >
             <p className="leading-relaxed">
-              Hello! I'm Elias Luzwehimana, a passionate software engineer with a deep fascination for creating innovative digital solutions. My journey in technology began with a simple curiosity about how digital systems work, which quickly evolved into a burning passion for software development.
+              Hej! Jag är Elias Luzwehimana, en passionerad mjukvaruutvecklare med en djup fascination för att skapa innovativa digitala lösningar. Min resa inom teknologi började med en enkel nyfikenhet om hur digitala system fungerar, vilket snabbt utvecklades till en brinnande passion för mjukvaruutveckling.
             </p>
             <p className="leading-relaxed">
-              What truly excites me is the intersection of frontend and backend development. I love crafting beautiful, intuitive user interfaces while also building robust server-side architectures. This full-stack perspective allows me to create comprehensive solutions that not only look great but function seamlessly.
+              Det som verkligen inspirerar mig är mötet mellan frontend- och backendutveckling. Jag älskar att skapa vackra, intuitiva användargränssnitt samtidigt som jag bygger robusta serverarkitekturer. Detta fullstack-perspektiv låter mig skapa omfattande lösningar som inte bara ser bra ut utan också fungerar sömlöst.
             </p>
             <p className="leading-relaxed">
-              My experience with modern technologies like React.js, Python, and AWS has taught me that the best solutions come from understanding both the technical possibilities and the human needs they serve. I'm particularly passionate about AI integration and cloud technologies, always exploring new ways to leverage these tools for better user experiences.
+              Min erfarenhet med moderna teknologier som React.js, Python och AWS har lärt mig att de bästa lösningarna kommer från förståelsen av både de tekniska möjligheterna och de mänskliga behoven de tjänar. Jag är särskilt passionerad för AI-integration och molnteknologier, och utforskar ständigt nya sätt att utnyttja dessa verktyg för bättre användarupplevelser.
             </p>
           </motion.div>
 
@@ -51,37 +51,37 @@ const AboutStory = () => {
             className="space-y-6"
           >
             <div className="bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10 p-6 rounded-xl backdrop-blur-sm border border-white/10">
-              <h3 className="text-xl font-semibold mb-4 text-white">What Drives Me</h3>
+              <h3 className="text-xl font-semibold mb-4 text-white">Vad Som Driver Mig</h3>
               <ul className="space-y-3 text-gray-300">
                 <li className="flex items-center gap-2">
                   <span className="text-blue-400">→</span>
-                  Building solutions that make a real impact
+                  Bygga lösningar som gör verklig skillnad
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="text-purple-400">→</span>
-                  Exploring new technologies and best practices
+                  Utforska nya teknologier och bästa praxis
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="text-pink-400">→</span>
-                  Creating intuitive and accessible user experiences
+                  Skapa intuitiva och tillgängliga användarupplevelser
                 </li>
               </ul>
             </div>
 
             <div className="bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10 p-6 rounded-xl backdrop-blur-sm border border-white/10">
-              <h3 className="text-xl font-semibold mb-4 text-white">My Approach</h3>
+              <h3 className="text-xl font-semibold mb-4 text-white">Mitt Tillvägagångssätt</h3>
               <ul className="space-y-3 text-gray-300">
                 <li className="flex items-center gap-2">
                   <span className="text-blue-400">→</span>
-                  User-centered design thinking
+                  Användarcentrerat designtänkande
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="text-purple-400">→</span>
-                  Clean, maintainable code architecture
+                  Ren, underhållbar kodarkitektur
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="text-pink-400">→</span>
-                  Continuous learning and improvement
+                  Kontinuerligt lärande och förbättring
                 </li>
               </ul>
             </div>
@@ -96,7 +96,7 @@ const AboutStory = () => {
           className="mt-12 text-center"
         >
           <p className="text-lg text-gray-300 italic">
-            "I believe in the power of technology to transform ideas into reality, and I'm committed to being part of that transformation."
+            "Jag tror på teknologins kraft att förvandla idéer till verklighet, och jag är dedikerad till att vara en del av den transformationen."
           </p>
         </motion.div>
       </div>

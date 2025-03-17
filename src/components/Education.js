@@ -4,29 +4,29 @@ import { motion } from 'framer-motion';
 const Education = () => {
   const skills = {
     education: {
-      title: "Education",
+      title: "Utbildning",
       items: [
         {
           institution: "YHögskolan | Chas",
-          program: "Full Stack Software Engineering",
-          duration: "2022 - Present",
-          description: "Comprehensive software engineering program focusing on modern web development, cloud technologies, and AI integration."
+          program: "Fullstack Mjukvaruutveckling",
+          duration: "2022 - Nuvarande",
+          description: "Omfattande mjukvaruutvecklingsprogram med fokus på modern webbutveckling, molnteknologier och AI-integration."
         }
       ]
     },
     frontend: {
-      title: "Frontend Development & UI/UX",
+      title: "Frontend-utveckling & UI/UX",
       items: [
-        "HTML5 & CSS3 (Advanced)",
+        "HTML5 & CSS3 (Avancerad)",
         "JavaScript (ES6+)",
         "React.js & Next.js",
         "Tailwind CSS",
-        "Responsive Design",
+        "Responsiv Design",
         "Figma (UI/UX Design)"
       ]
     },
     backend: {
-      title: "Backend Development & Database",
+      title: "Backend-utveckling & Databas",
       items: [
         "Python (Django, FastAPI)",
         "Java (Spring Boot)",
@@ -40,36 +40,36 @@ const Education = () => {
       ]
     },
     deployment: {
-      title: "Deployment & DevOps",
+      title: "Driftsättning & DevOps",
       items: [
-        "Vercel (Frontend Deployment)",
-        "Heroku (Backend Hosting)",
-        "Git & GitHub (Version Control)",
-        "CI/CD Pipelines",
-        "Docker Containerization",
-        "Kubernetes Orchestration"
+        "Vercel (Frontend-driftsättning)",
+        "Heroku (Backend-hosting)",
+        "Git & GitHub (Versionhantering)",
+        "CI/CD Pipeline",
+        "Docker Containerisering",
+        "Kubernetes Orkestrering"
       ]
     },
     technical: {
-      title: "Additional Technical Skills",
+      title: "Ytterligare Tekniska Färdigheter",
       items: [
-        "Docker & Container Management",
-        "PowerShell Scripting",
-        "AI & Machine Learning Integration",
+        "Docker & Containerhantering",
+        "PowerShell-skriptning",
+        "AI & Maskininlärningsintegration",
         "Prompt Engineering",
-        "Database Design & Optimization",
-        "System Architecture"
+        "Databasdesign & Optimering",
+        "Systemarkitektur"
       ]
     },
     soft: {
-      title: "Professional Skills",
+      title: "Professionella Färdigheter",
       items: [
-        "Effective Communication",
-        "Team Leadership & Collaboration",
-        "Problem-solving & Analysis",
-        "Agile Project Management",
-        "Continuous Learning",
-        "Client Relations"
+        "Effektiv Kommunikation",
+        "Teamledning & Samarbete",
+        "Problemlösning & Analys",
+        "Agil Projektledning",
+        "Kontinuerligt Lärande",
+        "Kundrelationer"
       ]
     }
   };
@@ -91,10 +91,10 @@ const Education = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 text-transparent bg-clip-text">
-            Education & Skills
+            Utbildning & Färdigheter
           </h2>
           <p className="text-xl text-gray-300">
-            Comprehensive expertise in modern software development
+            Omfattande expertis inom modern mjukvaruutveckling
           </p>
         </motion.div>
 
@@ -151,7 +151,7 @@ const Education = () => {
           className="mt-16 text-center"
         >
           <p className="text-gray-400 italic">
-            Continuously expanding knowledge through professional certifications and hands-on project experience
+            Utökar kontinuerligt kunskapen genom professionella certifieringar och praktisk projekterfarenhet
           </p>
         </motion.div>
       </div>

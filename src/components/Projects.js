@@ -17,7 +17,7 @@ const Projects = () => {
   const projects = [
     {
       title: "Kluret AI",
-      description: "An advanced AI-driven search engine revolutionizing product discovery across European e-commerce platforms. Leveraging cutting-edge machine learning algorithms to simplify shopping experiences with intelligent search capabilities and real-time product insights.",
+      description: "En avancerad AI-driven sökmotor som revolutionerar produktupptäckt på europeiska e-handelsplattformar. Utnyttjar toppmoderna maskininlärningsalgoritmer för att förenkla shoppingupplevelser med intelligenta sökfunktioner och realtidsinsikter om produkter.",
       isLive: true,
       projectLink: "https://kluret.com",
       technologies: [
@@ -49,7 +49,7 @@ const Projects = () => {
     },
     {
       title: "Vornify AI",
-      description: "An AI-driven platform that transforms web application development, turning ideas into fully functional products within hours. Combines open-source and closed-source technologies with Cloud AI APIs to deliver intelligent solutions with dynamic code generation.",
+      description: "En AI-driven plattform som transformerar webbutveckling genom att omvandla idéer till fullt fungerande produkter inom några timmar. Kombinerar öppen källkod och proprietär teknologi med Cloud AI APIs för att leverera intelligenta lösningar med dynamisk kodgenerering.",
       isLive: true,
       projectLink: "https://vornify.com",
       technologies: [
@@ -97,10 +97,10 @@ const Projects = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 text-transparent bg-clip-text">
-            Featured Projects
+            Utvalda Projekt
           </h2>
           <p className="text-xl text-gray-300">
-            Showcasing innovation through technology
+            Visar innovation genom teknologi
           </p>
         </motion.div>
 
@@ -139,7 +139,7 @@ const Projects = () => {
                   {/* Technologies */}
                   <div>
                     <h4 className="text-sm uppercase tracking-wider text-blue-400 mb-3">
-                      Technologies Used
+                      Använda Teknologier
                     </h4>
                     <div className="flex flex-wrap gap-2">
                       {project.technologies.map((tech, techIndex) => (
@@ -160,7 +160,7 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors mt-4 group/link"
                   >
-                    <span>View Project</span>
+                    <span>Se Projekt</span>
                     <svg 
                       className="w-5 h-5 transform transition-transform duration-200 group-hover/link:translate-x-1" 
                       fill="none" 
@@ -195,7 +195,7 @@ const Projects = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10 rounded-full text-white hover:from-blue-500/20 hover:via-purple-500/20 hover:to-pink-500/20 transition-all duration-300 backdrop-blur-sm border border-white/5 hover:border-white/10 group"
           >
-            <span className="text-lg">View More Projects</span>
+            <span className="text-lg">Se Fler Projekt</span>
             <svg 
               className="w-5 h-5 transform transition-transform duration-200 group-hover:translate-x-1" 
               fill="none" 
