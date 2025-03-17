@@ -41,10 +41,10 @@ const Navigation = () => {
   };
 
   const navItems = [
-    { href: '#home', label: 'Home' },
-    { href: '#about', label: 'About' },
-    { href: '#projects', label: 'Projects' },
-    { href: '#contact', label: 'Contact' }
+    { href: '#home', label: 'Hem' },
+    { href: '#about', label: 'Om Mig' },
+    { href: '#projects', label: 'Projekt' },
+    { href: '#contact', label: 'Kontakt' }
   ];
 
   return (
@@ -109,7 +109,7 @@ const Navigation = () => {
                       d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                     />
                   </svg>
-                  <span>View CV</span>
+                  <span>Se CV</span>
                 </motion.a>
               </div>
 
@@ -219,7 +219,7 @@ const Navigation = () => {
               onClick={e => e.stopPropagation()}
             >
               <div className="flex justify-between items-center mb-4">
-                <h3 className="text-xl font-semibold text-white">Resume Preview</h3>
+                <h3 className="text-xl font-semibold text-white">CV Förhandsvisning</h3>
                 <button
                   onClick={() => setIsResumeOpen(false)}
                   className="text-white/70 hover:text-white"
@@ -245,7 +245,7 @@ const Navigation = () => {
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                   </svg>
-                  <span>Download CV</span>
+                  <span>Ladda ner CV</span>
                 </a>
               </div>
             </motion.div>
