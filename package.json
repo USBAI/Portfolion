@@ -5,6 +5,9 @@
   "engines": {
     "node": ">=16.0.0"
   },
+  "resolutions": {
+    "yocto-queue": "^1.2.0"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -24,7 +27,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "node build.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
