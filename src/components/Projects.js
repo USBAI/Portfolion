@@ -16,6 +16,37 @@ const LiveIndicator = () => (
 const Projects = () => {
   const projects = [
     {
+      title: "Vornify AI",
+      description: "En AI-driven plattform som transformerar webbutveckling genom att omvandla idéer till fullt fungerande produkter inom några timmar. Kombinerar öppen källkod och proprietär teknologi med Cloud AI APIs för att leverera intelligenta lösningar med dynamisk kodgenerering.",
+      isLive: true,
+      projectLink: "https://vornify.com",
+      technologies: [
+        "React.js",
+        "Next.js",
+        "Node.js",
+        "Python",
+        "FastAPI",
+        "GraphQL",
+        "MongoDB",
+        "PostgreSQL",
+        "AWS",
+        "Docker",
+        "Kubernetes"
+      ],
+      logo: (
+        <svg width="35" height="30" viewBox="0 0 67 58" fill="none" xmlns="http://www.w3.org/2000/svg" className="transform transition-transform duration-300 group-hover:scale-110">
+          <path d="M25.0134 5.61606C28.9281 -0.664659 38.0719 -0.664669 41.9866 5.61605L65.1066 42.7105C69.2582 49.3714 64.4689 58 56.6201 58H10.3799C2.5311 58 -2.25824 49.3714 1.89335 42.7105L25.0134 5.61606Z" fill="white"/>
+          <path d="M44.9876 25.1599C49.0198 25.204 51.5789 29.4242 49.5217 32.6368L37.7091 51.0833C35.7115 54.2027 30.8308 54.0314 28.8546 50.7726L17.515 32.0731C15.5388 28.8142 17.9202 24.8642 21.8353 24.9069L44.9876 25.1599Z" fill="black"/>
+        </svg>
+      ),
+      author: {
+        name: "Elias Luzwehimana",
+        email: "eliasnhunzwe@gmail.com",
+        github: "https://github.com/USBAI",
+        linkedin: "https://www.linkedin.com/in/elias-nhunzwenimana-191a66233/"
+      }
+    },
+    {
       title: "Kluret AI",
       description: "En avancerad AI-driven sökmotor som revolutionerar produktupptäckt på europeiska e-handelsplattformar. Utnyttjar toppmoderna maskininlärningsalgoritmer för att förenkla shoppingupplevelser med intelligenta sökfunktioner och realtidsinsikter om produkter.",
       isLive: true,
@@ -38,37 +69,6 @@ const Projects = () => {
           <rect width="100" height="100" rx="50" fill="black"/>
           <rect x="42" y="15" width="50" height="50" rx="25" fill="white"/>
           <path d="M1.5 62H98.5V62C98.2174 65.3914 95.3823 68 91.9792 68H8.02079C4.61764 68 1.78261 65.3914 1.5 62V62Z" fill="white"/>
-        </svg>
-      ),
-      author: {
-        name: "Elias Luzwehimana",
-        email: "eliasnhunzwe@gmail.com",
-        github: "https://github.com/USBAI",
-        linkedin: "https://www.linkedin.com/in/elias-nhunzwenimana-191a66233/"
-      }
-    },
-    {
-      title: "Vornify AI",
-      description: "En AI-driven plattform som transformerar webbutveckling genom att omvandla idéer till fullt fungerande produkter inom några timmar. Kombinerar öppen källkod och proprietär teknologi med Cloud AI APIs för att leverera intelligenta lösningar med dynamisk kodgenerering.",
-      isLive: true,
-      projectLink: "https://vornify.com",
-      technologies: [
-        "React.js",
-        "Next.js",
-        "Node.js",
-        "Python",
-        "FastAPI",
-        "GraphQL",
-        "MongoDB",
-        "PostgreSQL",
-        "AWS",
-        "Docker",
-        "Kubernetes"
-      ],
-      logo: (
-        <svg width="35" height="30" viewBox="0 0 67 58" fill="none" xmlns="http://www.w3.org/2000/svg" className="transform transition-transform duration-300 group-hover:scale-110">
-          <path d="M25.0134 5.61606C28.9281 -0.664659 38.0719 -0.664669 41.9866 5.61605L65.1066 42.7105C69.2582 49.3714 64.4689 58 56.6201 58H10.3799C2.5311 58 -2.25824 49.3714 1.89335 42.7105L25.0134 5.61606Z" fill="white"/>
-          <path d="M44.9876 25.1599C49.0198 25.204 51.5789 29.4242 49.5217 32.6368L37.7091 51.0833C35.7115 54.2027 30.8308 54.0314 28.8546 50.7726L17.515 32.0731C15.5388 28.8142 17.9202 24.8642 21.8353 24.9069L44.9876 25.1599Z" fill="black"/>
         </svg>
       ),
       author: {
