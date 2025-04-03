@@ -29,7 +29,6 @@ const Education = () => {
       title: "Backend-utveckling & Databas",
       items: [
         "Python (Django, FastAPI)",
-        "Java (Spring Boot)",
         "C# (.NET Core)",
         "Node.js (Express.js)",
         "MongoDB (Atlas & Compass)",
@@ -43,11 +42,13 @@ const Education = () => {
       title: "Driftsättning & DevOps",
       items: [
         "Vercel (Frontend-driftsättning)",
-        "Heroku (Backend-hosting)",
+        "Heroku (Backend-hosting)", 
         "Git & GitHub (Versionhantering)",
         "CI/CD Pipeline",
         "Docker Containerisering",
-        "Kubernetes Orkestrering"
+        "Kubernetes Orkestrering",
+        "Apache Kafka",
+        "Elasticsearch"
       ]
     },
     technical: {
