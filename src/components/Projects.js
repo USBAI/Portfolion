@@ -19,7 +19,7 @@ const Projects = () => {
       title: "Vornify AI",
       description: "En AI-driven plattform som transformerar webbutveckling genom att omvandla idéer till fullt fungerande produkter inom några timmar. Kombinerar öppen källkod och proprietär teknologi med Cloud AI APIs för att leverera intelligenta lösningar med dynamisk kodgenerering.",
       isLive: true,
-      projectLink: "https://vornify.com",
+      projectLink: "https://vornify.se",
       technologies: [
         "React.js",
         "Next.js",
@@ -50,7 +50,7 @@ const Projects = () => {
       title: "Kluret AI",
       description: "En avancerad AI-driven sökmotor som revolutionerar produktupptäckt på europeiska e-handelsplattformar. Utnyttjar toppmoderna maskininlärningsalgoritmer för att förenkla shoppingupplevelser med intelligenta sökfunktioner och realtidsinsikter om produkter.",
       isLive: true,
-      projectLink: "https://kluret.com",
+      projectLink: "https://kluret.se",
       technologies: [
         "React.js",
         "Next.js",
