@@ -132,9 +132,9 @@ const Hero = () => {
           className="w-full max-w-6xl mx-auto"
         >
           <div className="flex flex-col md:flex-row items-center justify-center gap-12">
-            {/* Image container */}
+            {/* Image container - hidden on mobile */}
             <motion.div
-              className="relative w-48 h-48 md:w-64 md:h-64 mx-auto md:mx-0"
+              className="relative w-48 h-48 md:w-64 md:h-64 mx-auto md:mx-0 hidden md:block"
               onMouseMove={handleMouseMove}
               onMouseLeave={handleMouseLeave}
               onMouseEnter={() => setIsHovered(true)}
