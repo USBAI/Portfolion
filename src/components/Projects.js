@@ -50,7 +50,7 @@ const Projects = () => {
       title: "Kluret AI",
       description: "En avancerad AI-driven sökmotor som revolutionerar produktupptäckt på europeiska e-handelsplattformar. Utnyttjar toppmoderna maskininlärningsalgoritmer för att förenkla shoppingupplevelser med intelligenta sökfunktioner och realtidsinsikter om produkter.",
       isLive: true,
-      projectLink: "https://kluret.se",
+      projectLink: "https://kluret.com",
       technologies: [
         "React.js",
         "Next.js",
@@ -81,11 +81,11 @@ const Projects = () => {
   ];
 
   return (
-    <section className="relative py-20 bg-black overflow-hidden" id="projects">
+    <section className="relative py-20 bg-gradient-to-br from-white via-slate-50 to-blue-50 overflow-hidden" id="projects">
       {/* Decorative elements */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute inset-0 bg-[linear-gradient(45deg,_var(--tw-gradient-stops))] from-blue-500/10 via-purple-500/10 to-pink-500/10"></div>
-        <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-500/50 to-transparent"></div>
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute inset-0 bg-[linear-gradient(45deg,_var(--tw-gradient-stops))] from-blue-500/5 via-indigo-500/5 to-purple-500/5"></div>
+        <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-400/30 to-transparent"></div>
       </div>
 
       <div className="relative container mx-auto px-4 max-w-6xl">
@@ -96,10 +96,10 @@ const Projects = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 text-transparent bg-clip-text">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-slate-800 via-slate-600 to-slate-700 text-transparent bg-clip-text">
             Utvalda Projekt
           </h2>
-          <p className="text-xl text-gray-300">
+          <p className="text-xl text-slate-600">
             Visar innovation genom teknologi
           </p>
         </motion.div>
@@ -114,16 +114,16 @@ const Projects = () => {
               viewport={{ once: true }}
               className="group"
             >
-              <div className="bg-gradient-to-r from-blue-500/5 via-purple-500/5 to-pink-500/5 rounded-2xl p-8 backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all duration-300 h-full">
+              <div className="bg-gradient-to-r from-white/70 via-white/60 to-white/70 rounded-2xl p-8 backdrop-blur-xl border border-white/30 hover:border-blue-200/50 transition-all duration-300 h-full shadow-lg hover:shadow-xl">
                 <div className="flex flex-col gap-8">
                   {/* Project Header with Logo */}
                   <div className="flex items-start justify-between">
                     <div className="flex items-center gap-4">
-                      <div className="p-2 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-xl backdrop-blur-sm border border-white/5">
+                      <div className="p-2 bg-gradient-to-br from-blue-500/10 to-indigo-500/10 rounded-xl backdrop-blur-sm border border-blue-200/30">
                         {project.logo}
                       </div>
                       <div>
-                        <h3 className="text-2xl font-semibold text-white mb-1">
+                        <h3 className="text-2xl font-semibold text-slate-800 mb-1">
                           {project.title}
                         </h3>
                         {project.isLive && <LiveIndicator />}
@@ -132,20 +132,20 @@ const Projects = () => {
                   </div>
 
                   {/* Description */}
-                  <p className="text-gray-300 leading-relaxed">
+                  <p className="text-slate-600 leading-relaxed">
                     {project.description}
                   </p>
 
                   {/* Technologies */}
                   <div>
-                    <h4 className="text-sm uppercase tracking-wider text-blue-400 mb-3">
+                    <h4 className="text-sm uppercase tracking-wider text-blue-600 mb-3 font-medium">
                       Använda Teknologier
                     </h4>
                     <div className="flex flex-wrap gap-2">
                       {project.technologies.map((tech, techIndex) => (
                         <span
                           key={techIndex}
-                          className="px-3 py-1 bg-white/5 rounded-full text-sm text-white/80 hover:text-white hover:bg-white/10 transition-colors duration-300"
+                          className="px-3 py-1 bg-white/60 backdrop-blur-sm rounded-full text-sm text-slate-700 hover:text-slate-800 hover:bg-white/80 transition-all duration-300 border border-slate-200/40"
                         >
                           {tech}
                         </span>
@@ -158,7 +158,7 @@ const Projects = () => {
                     href={project.projectLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors mt-4 group/link"
+                    className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-800 transition-colors mt-4 group/link font-medium"
                   >
                     <span>Se Projekt</span>
                     <svg 
@@ -193,7 +193,7 @@ const Projects = () => {
             href="https://github.com/USBAI"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10 rounded-full text-white hover:from-blue-500/20 hover:via-purple-500/20 hover:to-pink-500/20 transition-all duration-300 backdrop-blur-sm border border-white/5 hover:border-white/10 group"
+            className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-white/70 via-white/60 to-white/70 rounded-full text-slate-700 hover:text-slate-800 hover:from-white/80 hover:via-white/70 hover:to-white/80 transition-all duration-300 backdrop-blur-xl border border-white/40 hover:border-blue-200/60 group font-medium shadow-lg hover:shadow-xl"
           >
             <span className="text-lg">Se Fler Projekt</span>
             <svg 

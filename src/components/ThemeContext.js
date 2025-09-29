@@ -3,8 +3,8 @@ import React, { createContext, useContext } from 'react';
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  // We're keeping the site in dark mode only
-  const isDarkMode = true;
+  // Light mode for modern glassmorphism design
+  const isDarkMode = false;
 
   return (
     <ThemeContext.Provider value={{ isDarkMode }}>

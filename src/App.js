@@ -11,7 +11,7 @@ import './styles/spaceAnimation.css';
 
 function App() {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-slate-50 text-slate-800">
       <Navigation />
       <main>
         <Hero />

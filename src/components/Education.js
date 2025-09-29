@@ -76,11 +76,11 @@ const Education = () => {
   };
 
   return (
-    <section className="relative py-20 bg-black overflow-hidden" id="education">
+    <section className="relative py-20 bg-gradient-to-br from-slate-50 via-white to-blue-50 overflow-hidden" id="education">
       {/* Decorative elements */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute inset-0 bg-[linear-gradient(45deg,_var(--tw-gradient-stops))] from-blue-500/10 via-purple-500/10 to-pink-500/10"></div>
-        <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-500/50 to-transparent"></div>
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute inset-0 bg-[linear-gradient(45deg,_var(--tw-gradient-stops))] from-blue-500/5 via-indigo-500/5 to-purple-500/5"></div>
+        <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-400/30 to-transparent"></div>
       </div>
 
       <div className="relative container mx-auto px-4 max-w-6xl">
@@ -91,10 +91,10 @@ const Education = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 text-transparent bg-clip-text">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-slate-800 via-slate-600 to-slate-700 text-transparent bg-clip-text">
             Utbildning & Färdigheter
           </h2>
-          <p className="text-xl text-gray-300">
+          <p className="text-xl text-slate-600">
             Omfattande expertis inom modern mjukvaruutveckling
           </p>
         </motion.div>
@@ -108,11 +108,11 @@ const Education = () => {
           className="mb-16"
         >
           {skills.education.items.map((edu, index) => (
-            <div key={index} className="bg-gradient-to-r from-blue-500/5 via-purple-500/5 to-pink-500/5 rounded-xl p-8 backdrop-blur-sm border border-white/5">
-              <h3 className="text-2xl font-bold text-white mb-2">{edu.institution}</h3>
-              <p className="text-xl text-blue-400 mb-2">{edu.program}</p>
-              <p className="text-gray-400 mb-4">{edu.duration}</p>
-              <p className="text-gray-300">{edu.description}</p>
+            <div key={index} className="bg-white/70 backdrop-blur-xl rounded-2xl p-8 border border-white/30 hover:border-blue-200/50 transition-all duration-300 shadow-lg hover:shadow-xl">
+              <h3 className="text-2xl font-bold text-slate-800 mb-2">{edu.institution}</h3>
+              <p className="text-xl text-blue-600 mb-2 font-medium">{edu.program}</p>
+              <p className="text-slate-500 mb-4 font-medium">{edu.duration}</p>
+              <p className="text-slate-600 leading-relaxed">{edu.description}</p>
             </div>
           ))}
         </motion.div>
@@ -126,15 +126,15 @@ const Education = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-r from-blue-500/5 via-purple-500/5 to-pink-500/5 rounded-xl p-6 backdrop-blur-sm border border-white/5"
+              className="bg-white/70 backdrop-blur-xl rounded-2xl p-6 border border-white/30 hover:border-blue-200/50 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
-              <h3 className="text-xl font-semibold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text">
+              <h3 className="text-xl font-semibold mb-4 text-slate-800">
                 {section.title}
               </h3>
               <ul className="space-y-3">
                 {section.items.map((item, itemIndex) => (
-                  <li key={itemIndex} className="flex items-center gap-3 text-gray-300">
-                    <span className="w-2 h-2 rounded-full bg-blue-400"></span>
+                  <li key={itemIndex} className="flex items-center gap-3 text-slate-600">
+                    <span className="w-2 h-2 rounded-full bg-blue-500"></span>
                     <span>{item}</span>
                   </li>
                 ))}
@@ -151,7 +151,7 @@ const Education = () => {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <p className="text-gray-400 italic">
+          <p className="text-slate-500 italic font-medium">
             Utökar kontinuerligt kunskapen genom professionella certifieringar och praktisk projekterfarenhet
           </p>
         </motion.div>
