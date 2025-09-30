@@ -1,23 +1,28 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useLanguage } from '../contexts/LanguageContext';
 
-const LiveIndicator = () => (
-  <div className="flex items-center gap-2">
-    <div className="relative">
-      <span className="flex h-3 w-3">
-        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-        <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
-      </span>
+const LiveIndicator = () => {
+  const { t } = useLanguage();
+  return (
+    <div className="flex items-center gap-2">
+      <div className="relative">
+        <span className="flex h-3 w-3">
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+          <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+        </span>
+      </div>
+      <span className="text-green-400 text-sm">{t('projects.live')}</span>
     </div>
-    <span className="text-green-400 text-sm">Live</span>
-  </div>
-);
+  );
+};
 
 const Projects = () => {
+  const { t } = useLanguage();
   const projects = [
     {
       title: "Vornify AI",
-      description: "En AI-driven plattform som transformerar webbutveckling genom att omvandla idéer till fullt fungerande produkter inom några timmar. Kombinerar öppen källkod och proprietär teknologi med Cloud AI APIs för att leverera intelligenta lösningar med dynamisk kodgenerering.",
+      description: t('projects.projectDescriptions.0'),
       isLive: true,
       projectLink: "https://vornify.se",
       technologies: [
@@ -48,7 +53,7 @@ const Projects = () => {
     },
     {
       title: "Kluret AI",
-      description: "En avancerad AI-driven sökmotor som revolutionerar produktupptäckt på europeiska e-handelsplattformar. Utnyttjar toppmoderna maskininlärningsalgoritmer för att förenkla shoppingupplevelser med intelligenta sökfunktioner och realtidsinsikter om produkter.",
+      description: t('projects.projectDescriptions.1'),
       isLive: true,
       projectLink: "https://kluret.com",
       technologies: [
@@ -97,10 +102,10 @@ const Projects = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-slate-800 via-slate-600 to-slate-700 text-transparent bg-clip-text">
-            Utvalda Projekt
+            {t('projects.title')}
           </h2>
           <p className="text-xl text-slate-600">
-            Visar innovation genom teknologi
+            {t('projects.subtitle')}
           </p>
         </motion.div>
 
@@ -139,7 +144,7 @@ const Projects = () => {
                   {/* Technologies */}
                   <div>
                     <h4 className="text-sm uppercase tracking-wider text-blue-600 mb-3 font-medium">
-                      Använda Teknologier
+                      {t('projects.technologies')}
                     </h4>
                     <div className="flex flex-wrap gap-2">
                       {project.technologies.map((tech, techIndex) => (
@@ -195,7 +200,7 @@ const Projects = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-white/70 via-white/60 to-white/70 rounded-full text-slate-700 hover:text-slate-800 hover:from-white/80 hover:via-white/70 hover:to-white/80 transition-all duration-300 backdrop-blur-xl border border-white/40 hover:border-blue-200/60 group font-medium shadow-lg hover:shadow-xl"
           >
-            <span className="text-lg">Se Fler Projekt</span>
+            <span className="text-lg">{t('projects.viewMore')}</span>
             <svg 
               className="w-5 h-5 transform transition-transform duration-200 group-hover:translate-x-1" 
               fill="none" 

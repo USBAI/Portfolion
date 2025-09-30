@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Navigation = () => {
+  const { language, toggleLanguage, t } = useLanguage();
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -41,10 +43,10 @@ const Navigation = () => {
   };
 
   const navItems = [
-    { href: '#home', label: 'Hem' },
-    { href: '#about', label: 'Om Mig' },
-    { href: '#projects', label: 'Projekt' },
-    { href: '#contact', label: 'Kontakt' }
+    { href: '#home', label: t('nav.home') },
+    { href: '#about', label: t('nav.about') },
+    { href: '#projects', label: t('nav.projects') },
+    { href: '#contact', label: t('nav.contact') }
   ];
 
   return (
@@ -87,6 +89,32 @@ const Navigation = () => {
                     {item.label}
                   </motion.a>
                 ))}
+                
+                {/* Language Switcher */}
+                <div className="flex items-center gap-2 ml-4">
+                  <motion.button
+                    onClick={toggleLanguage}
+                    className={`text-2xl transition-all duration-300 hover:scale-110 ${
+                      language === 'en' ? 'opacity-100' : 'opacity-60'
+                    }`}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    🇺🇸
+                  </motion.button>
+                  
+                  <motion.button
+                    onClick={toggleLanguage}
+                    className={`text-2xl transition-all duration-300 hover:scale-110 ${
+                      language === 'sv' ? 'opacity-100' : 'opacity-60'
+                    }`}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    🇸🇪
+                  </motion.button>
+                </div>
+                
                 <motion.a
                   href={CV_URL}
                   target="_blank"
@@ -109,12 +137,35 @@ const Navigation = () => {
                       d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                     />
                   </svg>
-                  <span>Se CV</span>
+                  <span>{t('hero.downloadCV')}</span>
                 </motion.a>
               </div>
 
               {/* Mobile menu button */}
               <div className="md:hidden flex items-center gap-4">
+                {/* Mobile Language Switcher */}
+                <div className="flex items-center gap-2">
+                  <motion.button
+                    onClick={toggleLanguage}
+                    className={`text-xl transition-all duration-300 ${
+                      language === 'en' ? 'opacity-100' : 'opacity-60'
+                    }`}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    🇺🇸
+                  </motion.button>
+                  
+                  <motion.button
+                    onClick={toggleLanguage}
+                    className={`text-xl transition-all duration-300 ${
+                      language === 'sv' ? 'opacity-100' : 'opacity-60'
+                    }`}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    🇸🇪
+                  </motion.button>
+                </div>
+
                 <motion.a
                   href={CV_URL}
                   target="_blank"

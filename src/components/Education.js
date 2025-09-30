@@ -1,79 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Education = () => {
-  const skills = {
-    education: {
-      title: "Utbildning",
-      items: [
-        {
-          institution: "YHögskolan | Chas",
-          program: "Fullstack Mjukvaruutveckling",
-          duration: "2022 - Nuvarande",
-          description: "Omfattande mjukvaruutvecklingsprogram med fokus på modern webbutveckling, molnteknologier och AI-integration."
-        }
-      ]
-    },
-    frontend: {
-      title: "Frontend-utveckling & UI/UX",
-      items: [
-        "HTML5 & CSS3 (Avancerad)",
-        "JavaScript (ES6+)",
-        "React.js & Next.js",
-        "Tailwind CSS",
-        "Responsiv Design",
-        "Figma (UI/UX Design)"
-      ]
-    },
-    backend: {
-      title: "Backend-utveckling & Databas",
-      items: [
-        "Python (Django, FastAPI)",
-        "C# (.NET Core)",
-        "Node.js (Express.js)",
-        "MongoDB (Atlas & Compass)",
-        "RESTful API Design",
-        "GraphQL",
-        "Firebase",
-        "AWS (EC2, RDS, Lambda)"
-      ]
-    },
-    deployment: {
-      title: "Driftsättning & DevOps",
-      items: [
-        "Vercel (Frontend-driftsättning)",
-        "Heroku (Backend-hosting)", 
-        "Git & GitHub (Versionhantering)",
-        "CI/CD Pipeline",
-        "Docker Containerisering",
-        "Kubernetes Orkestrering",
-        "Apache Kafka",
-        "Elasticsearch"
-      ]
-    },
-    technical: {
-      title: "Ytterligare Tekniska Färdigheter",
-      items: [
-        "Docker & Containerhantering",
-        "PowerShell-skriptning",
-        "AI & Maskininlärningsintegration",
-        "Prompt Engineering",
-        "Databasdesign & Optimering",
-        "Systemarkitektur"
-      ]
-    },
-    soft: {
-      title: "Professionella Färdigheter",
-      items: [
-        "Effektiv Kommunikation",
-        "Teamledning & Samarbete",
-        "Problemlösning & Analys",
-        "Agil Projektledning",
-        "Kontinuerligt Lärande",
-        "Kundrelationer"
-      ]
-    }
-  };
+  const { t } = useLanguage();
+  const skills = t('education');
+
+  // Add safety checks to ensure we have the data structure we expect
+  if (!skills || typeof skills !== 'object') {
+    return <div>Loading...</div>;
+  }
 
   return (
     <section className="relative py-20 bg-gradient-to-br from-slate-50 via-white to-blue-50 overflow-hidden" id="education">
@@ -92,10 +28,10 @@ const Education = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-slate-800 via-slate-600 to-slate-700 text-transparent bg-clip-text">
-            Utbildning & Färdigheter
+            {t('education.title')}
           </h2>
           <p className="text-xl text-slate-600">
-            Omfattande expertis inom modern mjukvaruutveckling
+            {t('education.subtitle')}
           </p>
         </motion.div>
 
@@ -107,7 +43,7 @@ const Education = () => {
           viewport={{ once: true }}
           className="mb-16"
         >
-          {skills.education.items.map((edu, index) => (
+          {skills.education?.items?.map((edu, index) => (
             <div key={index} className="bg-white/70 backdrop-blur-xl rounded-2xl p-8 border border-white/30 hover:border-blue-200/50 transition-all duration-300 shadow-lg hover:shadow-xl">
               <h3 className="text-2xl font-bold text-slate-800 mb-2">{edu.institution}</h3>
               <p className="text-xl text-blue-600 mb-2 font-medium">{edu.program}</p>
@@ -119,8 +55,14 @@ const Education = () => {
 
         {/* Skills Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {Object.entries(skills).filter(([key]) => key !== 'education').map(([key, section], index) => (
-            <motion.div
+          {Object.entries(skills).filter(([key]) => key !== 'education' && key !== 'title' && key !== 'subtitle').map(([key, section], index) => {
+            // Add safety check for section structure
+            if (!section || !section.items) {
+              return null;
+            }
+            
+            return (
+              <motion.div
               key={key}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -140,7 +82,8 @@ const Education = () => {
                 ))}
               </ul>
             </motion.div>
-          ))}
+            );
+          })}
         </div>
 
         {/* Certification Hint */}
@@ -152,7 +95,7 @@ const Education = () => {
           className="mt-16 text-center"
         >
           <p className="text-slate-500 italic font-medium">
-            Utökar kontinuerligt kunskapen genom professionella certifieringar och praktisk projekterfarenhet
+            {t('education.certificationHint') || "Continuously expanding knowledge through professional certifications and hands-on project experience"}
           </p>
         </motion.div>
       </div>

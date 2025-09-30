@@ -1,34 +1,14 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import eliasImage from '../assets/elias.png';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const AboutStory = () => {
+  const { t } = useLanguage();
   const [currentSlide, setCurrentSlide] = useState(0);
   
-  const textSlides = [
-    "Hej! Jag är Elias Luzwehimana, en passionerad mjukvaruutvecklare med en djup fascination för att skapa innovativa digitala lösningar. Min resa inom teknologi började med en enkel nyfikenhet om hur digitala system fungerar, vilket snabbt utvecklades till en brinnande passion för mjukvaruutveckling.",
-    "Det som verkligen inspirerar mig är mötet mellan frontend- och backendutveckling. Jag älskar att skapa vackra, intuitiva användargränssnitt samtidigt som jag bygger robusta serverarkitekturer. Detta fullstack-perspektiv låter mig skapa omfattande lösningar som inte bara ser bra ut utan också fungerar sömlöst.",
-    "Min erfarenhet med moderna teknologier som React.js, Python och AWS har lärt mig att de bästa lösningarna kommer från förståelsen av både de tekniska möjligheterna och de mänskliga behoven de tjänar. Jag är särskilt passionerad för AI-integration och molnteknologier, och utforskar ständigt nya sätt att utnyttja dessa verktyg för bättre användarupplevelser."
-  ];
-
-  const infoSlides = [
-    {
-      title: "Vad Som Driver Mig",
-      items: [
-        "Bygga lösningar som gör verklig skillnad",
-        "Utforska nya teknologier och bästa praxis", 
-        "Skapa intuitiva och tillgängliga användarupplevelser"
-      ]
-    },
-    {
-      title: "Mitt Tillvägagångssätt",
-      items: [
-        "Användarcentrerat designtänkande",
-        "Ren, underhållbar kodarkitektur",
-        "Kontinuerligt lärande och förbättring"
-      ]
-    }
-  ];
+  const textSlides = t('about.textSlides');
+  const infoSlides = t('about.infoSlides');
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % (textSlides.length + infoSlides.length));
@@ -89,7 +69,7 @@ const AboutStory = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-slate-800 via-slate-600 to-slate-700 text-transparent bg-clip-text">
-            Min Resa Inom Tech
+            {t('about.title')}
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full"></div>
         </motion.div>

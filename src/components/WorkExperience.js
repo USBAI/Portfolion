@@ -1,47 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import teliaLogo from '../assets/telia.png';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const WorkExperience = () => {
-  const experiences = [
-    {
-      company: "Telia",
-      role: "Software Engineer",
-      period: "Juni 2025 - Nuvarande",
-      logo: teliaLogo,
-      current: true,
-      tools: [
-        "JavaScript", "React", "Express.js", "Apache Kafka", "Grafana", 
-        "Kubernetes", "Docker", "SSH", "IntelliJ IDE", "Node.js", "API Development",
-        "OpenSearch", "Elasticsearch"
-      ],
-      description: "Som Software Engineer på Telia arbetar jag inom BroadBand Data Mediation och fokuserar på kundportaler. Jag bygger nya funktioner, uppdaterar program och åtgärdar buggar för att förbättra kundupplevelsen. Min roll involverar fullstack-utveckling med modern teknikstack och containeriserade lösningar för att säkerställa skalbarhet och prestanda."
-    },
-    {
-      company: "Coredination AB",
-      role: "Fullstack-utvecklare",
-      period: "Oktober 2021 - Mars 2025",
-      logo: "https://th.bing.com/th/id/OIP.ntAKLpwQl_kRyDqhrZwojQAAAA?w=128&h=150&c=7&r=0&o=5&dpr=1.3&pid=1.7",
-      current: false,
-      tools: [
-        "React.js", "Node.js", "AWS DynamoDB", "Express.js", "AWS Lambda",
-        "TypeScript", "GraphQL", "Next.js", "AWS S3", "Tailwind CSS"
-      ],
-      description: "Att arbeta på Coredination AB har varit en otrolig resa av tillväxt och innovation. Jag hade möjligheten att arbeta med banbrytande projekt, implementera serverlösa arkitekturer med AWS och moderna frontend-lösningar. Den samarbetsinriktade miljön och utmanande projekten hjälpte mig att avsevärt utöka min fullstack-expertis."
-    },
-    {
-      company: "Scania",
-      role: "Backend-utvecklare",
-      period: "Februari 2020 - Mars 2022",
-      logo: "https://upload.wikimedia.org/wikipedia/en/thumb/8/89/Scania_Logo.svg/640px-Scania_Logo.svg.png",
-      current: false,
-      tools: [
-        "Python", "Django", "PostgreSQL", "AWS RDS", "Docker", "Jenkins",
-        "AWS EC2", "REST APIs", "Git", "AWS CloudFormation"
-      ],
-      description: "På Scania specialiserade jag mig på backend-utveckling för företagsapplikationer som påverkade fordonsindustrin. Genom att arbeta med AWS-molntjänster och PostgreSQL-databaser utvecklade jag robusta backend-lösningar som hanterade storskalig databehandling. Jag fokuserade särskilt på att optimera databasernas prestanda och implementera effektiva API-arkitekturer."
-    }
-  ];
+  const { t } = useLanguage();
+  const experiences = t('workExperience.experiences');
 
   return (
     <section className="relative py-20 bg-gradient-to-br from-white via-slate-50 to-blue-50 overflow-hidden" id="experience">
@@ -60,10 +24,10 @@ const WorkExperience = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-slate-800 via-slate-600 to-slate-700 text-transparent bg-clip-text">
-            Arbetslivserfarenhet
+            {t('workExperience.title')}
           </h2>
           <p className="text-xl text-slate-600">
-            Professionell resa och bidrag
+            {t('workExperience.subtitle')}
           </p>
         </motion.div>
 
@@ -94,7 +58,7 @@ const WorkExperience = () => {
                   <div className="flex items-center gap-6">
                     <div className="w-16 h-16 rounded-xl overflow-hidden bg-white/80 backdrop-blur-sm flex items-center justify-center p-2 border border-slate-200/40 flex-shrink-0">
                       <img
-                        src={exp.logo}
+                        src={exp.logo === 'telia' ? teliaLogo : exp.logo}
                         alt={`${exp.company} logotyp`}
                         className="w-full h-full object-contain"
                       />
@@ -106,7 +70,7 @@ const WorkExperience = () => {
                           <span className="truncate">{exp.company}</span>
                           {exp.current && (
                             <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full border border-green-200 whitespace-nowrap">
-                              Nuvarande
+                              {t('workExperience.current')}
                             </span>
                           )}
                         </h3>
@@ -124,7 +88,7 @@ const WorkExperience = () => {
                   {/* Tools & Technologies */}
                   <div>
                     <h4 className="text-sm uppercase tracking-wider text-blue-600 mb-3 font-medium">
-                      Teknologier & Verktyg
+                      {t('workExperience.technologiesTitle')}
                     </h4>
                     <div className="flex flex-wrap gap-2">
                       {exp.tools.map((tool, toolIndex) => (
